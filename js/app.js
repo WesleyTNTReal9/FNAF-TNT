@@ -383,7 +383,7 @@ function toggleLeftLight() {
         }
     });
 
-    $('#left-light-toggle').mouseup(function () {
+    $('#left-light-toggle').mousedown(function () {
         if (!leftDisabled) {
             leftLight = 0;
             processLightActivty(leftLight, 'left');
@@ -405,7 +405,7 @@ function toggleRightLight() {
             $('.door-light-disabled').get(0).play();
         }
     })
-    $('#right-light-toggle').mouseup(function () {
+    $('#right-light-toggle').mousedown(function () {
         if (!rightDisabled) {
             rightLight = 0;
             processLightActivty(rightLight, 'right');
