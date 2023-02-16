@@ -208,13 +208,13 @@ h1 {
     height: auto;
     width: 600px;
     float: left;
-    display: inline-block;
+    display: block;
     margin: 19px 0px 0px 10%;
 }
 
 .control-usage {
     width: 300px;
-    display: inline-block;
+    display: block;
     float: left;
 }
 
