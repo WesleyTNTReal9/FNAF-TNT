@@ -374,7 +374,7 @@ function toggleDoor(location, door) {
 //all lights activity
 //================
 function toggleLeftLight() {
-    $('#left-light-toggle').mouseClicked(function () {
+    $('#left-light-toggle').mouseover(function () {
         if (!leftDisabled) {
             leftLight = 1;
             processLightActivty(leftLight, 'left');
@@ -383,7 +383,7 @@ function toggleLeftLight() {
         }
     });
 
-    $('#left-light-toggle').mouseClicked(function () {
+    $('#left-light-toggle').mouseover(function () {
         if (!leftDisabled) {
             leftLight = 0;
             processLightActivty(leftLight, 'left');
@@ -397,7 +397,7 @@ function toggleLeftLight() {
 }
 
 function toggleRightLight() {
-    $('#right-light-toggle').mouseClicked(function () {
+    $('#right-light-toggle').mouseover(function () {
         if (!rightDisabled) {
             rightLight = 1;
             processLightActivty(rightLight, 'right');
@@ -405,7 +405,7 @@ function toggleRightLight() {
             $('.door-light-disabled').get(0).play();
         }
     })
-    $('#right-light-toggle').mouseClicked(function () {
+    $('#right-light-toggle').mouseover(function () {
         if (!rightDisabled) {
             rightLight = 0;
             processLightActivty(rightLight, 'right');
