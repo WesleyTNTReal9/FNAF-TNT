@@ -3,10 +3,10 @@ var hourInterval = null; // 1 game hour == 86 rl seconds = 28 game seconds
 var jumpReady = false;
 var leftDoor = 0;
 var leftLight = 0;
-var leftDisabled = 0;
+
 var rightDoor = 0;
 var rightLight = 0;
-var rightDisabled = 0;
+
 var cameraMode = 0;
 var showStage = [1, 1, 1];
 var activeCamImg;
