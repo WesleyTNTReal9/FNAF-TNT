@@ -340,22 +340,20 @@ function muteCall() {
 //================
 var doorTimeout;
 function toggleLeftDoor() {
-    if (!leftDisabled) {
+    
         leftDoor ? leftDoor = 0 : leftDoor = 1;
         toggleDoor('left', leftDoor);
-    } else if (leftDisabled) {
-        $('.door-light-disabled').get(0).play();
+    
     }
-}
+
 
 function toggleRightDoor() {
-    if (!rightDisabled) {
+    
         rightDoor ? rightDoor = 0 : rightDoor = 1;
         toggleDoor('right', rightDoor);
-    } else if (rightDisabled) {
-        $('.door-light-disabled').get(0).play();
+    
     }
-}
+
 
 function toggleDoor(location, door) {
     updatePowerUsage();
@@ -375,46 +373,42 @@ function toggleDoor(location, door) {
 //================
 function toggleLeftLight() {
     $('#left-light-toggle').mousedown(function () {
-        if (!leftDisabled) {
+        
             leftLight = 1;
             processLightActivty(leftLight, 'left');
-        } else if (leftDisabled) {
-            $('.door-light-disabled').get(0).play();
-        }
+    
     });
 
     $('#left-light-toggle').mouseup(function () {
-        if (!leftDisabled) {
+       
             leftLight = 0;
             processLightActivty(leftLight, 'left');
-        }
+        
     }).mouseleave(function () {
-        if (!leftDisabled) {
+        
             leftLight = 0;
             processLightActivty(leftLight, 'left');
-        }
+        
     });
 }
 
 function toggleRightLight() {
     $('#right-light-toggle').mousedown(function () {
-        if (!rightDisabled) {
+        
             rightLight = 1;
             processLightActivty(rightLight, 'right');
-        } else if (rightDisabled) {
-            $('.door-light-disabled').get(0).play();
-        }
-    })
+        
+    });
     $('#right-light-toggle').mouseup(function () {
-        if (!rightDisabled) {
+        
             rightLight = 0;
             processLightActivty(rightLight, 'right');
-        }
+        
     }).mouseleave(function () {
-        if (!rightDisabled) {
+        
             rightLight = 0;
             processLightActivty(rightLight, 'right');
-        }
+        
     });
 }
 
